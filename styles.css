@@ -1,0 +1,425 @@
+html, body, h1, h2, h3, h4, h5, h6, p {
+  font-family: "open sans";
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%
+}
+
+.top-body {
+  background: #6E8898;
+  border: 1px solid #fdfd96;
+  width: 100%;
+  height: 100px;
+  padding: 10px 15px 15px;
+  margin-bottom: 15px;
+  border-top:  5px color: bisque;
+  display: grid;
+  grid-template-areas:
+  ". admin"
+  "nav logo";
+  grid-template-columns: 80% 20%;
+  grid-template-rows: 30% 70%;
+}
+
+.user-info {
+  grid-area: admin;
+}
+
+button {
+  opacity: 100%;
+  border: none;
+  background: #6E8898;
+}
+
+.logo {
+  grid-area: logo;
+  font-size: 50px;
+  font-weight: bold;
+  width: 30px;
+  padding-top: 20px;
+  padding-left: 20px;
+  padding-bottom: 10px;
+}
+
+.navigation {
+  grid-area: nav;
+  margin-left: 10px;
+  grid-template-areas:
+  "shares plants videos";
+  grid-template-columns: 33% 33% 33%;
+  padding-top: 40px;
+}
+
+.shares {
+  grid-area: shares;
+  background: #6E8898;
+  font-size: 13px;
+  padding-right: 25px;
+}
+
+.plants {
+  grid-area: plants;
+  color: darkgrey;
+  font-size: 13px;
+  padding-right: 25px;
+}
+
+.personal-videos {
+  grid-area: videos;
+  color: darkgrey;
+  font-size: 13px;
+  padding-right: 25px;
+}
+
+.grid-container {
+  display: grid;
+  margin: 10px;
+  grid-template-areas:
+  "one two three four"
+  "five six seven eight";
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 2px;
+}
+
+.grid-item {
+  background: #dcc7be;
+  border: 2px solid #BEBBB7;
+  height: 300px;
+  margin: 5px;
+}
+
+.background-img-1 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/chamomile-1.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-1 {
+  grid-area: one;
+}
+
+.background-img-2 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/stinging-nettle.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-2 {
+  grid-area: two;
+}
+
+.background-img-3 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/dandelion.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-3 {
+  grid-area: three;
+}
+
+.background-img-4 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/lemon-balm.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-4 {
+  grid-area: four;
+}
+
+.background-img-5 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/raspberry.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-5 {
+  grid-area: five;
+}
+
+.background-img-6 {
+  height: 110px;
+  width: 100%;
+  background-image: url(./assets/sage.jpg);
+  background-size: cover;
+  background-position: top;
+  opacity: .9;
+}
+
+.item-6 {
+  grid-area: six;
+}
+
+.header-text {
+  padding-top: 8px;
+  padding-left: 10px;
+  font-size: 13px;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.date {
+  padding-top: 2px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  font-size: 10px;
+  font-family: sans-serif;
+  font-weight: lighter;
+}
+
+.link {
+  font-size: 7px;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 10px;
+  background: #E8E8E8;
+     margin-left:5%;
+     margin-right:5%;
+}
+
+.info-text {
+  /* padding-top: 2px; */
+  padding-left: 10px;
+  font-size: 11px;
+  font-family: serif;
+  font-weight: normal;
+}
+
+.info-text-description {
+  padding-top: 2px;
+  padding-left: 10px;
+  font-size: 14px;
+  padding-bottom: 5px;
+  font-family: serif;
+  font-weight: normal;
+}
+
+.attachments {
+  padding-top: 2px;
+  padding-left: 10px;
+  font-size: 10px;
+  padding-bottom: 2px;
+  font-family: serif;
+  font-weight: normal;
+}
+
+.attachment-number {
+  color: #6E8898;
+  font-size: 20px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  font-family: arial;
+}
+
+.share {
+  background: #fdfd96;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  padding-top: 5px;
+  padding-right: 5px;
+  padding: 5px;
+}
+
+.nav-image {
+  padding-top: 4px;
+  height: 16px;
+  width: 15px;
+}
+
+.shares {
+  color: white;
+}
+
+.body-shares {
+  padding-left: 15px;
+  font-size: 26px;
+}
+
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "one two"
+    "three four"
+    "five six"
+    "seven eight";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-gap: 2px;
+  }
+
+  .grid-item {
+    background: #D3D0CB;
+    border: 2px solid #BEBBB7;
+    height: 300px;
+    margin: 5px;
+  }
+
+  .background-img-1 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/chamomile-1.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-1 {
+    grid-area: one;
+  }
+
+  .background-img-2 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/stinging-nettle.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-2 {
+    grid-area: two;
+  }
+
+  .background-img-3 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/dandelion.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-3 {
+    grid-area: three;
+  }
+
+  .background-img-4 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/lemon-balm.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-4 {
+    grid-area: four;
+  }
+
+  .background-img-5 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/raspberry.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-5 {
+    grid-area: five;
+  }
+
+  .background-img-6 {
+    height: 110px;
+    width: 100%;
+    background-image: url(./assets/sage.jpg);
+    background-size: cover;
+    background-position: top;
+    opacity: .9;
+  }
+
+  .item-6 {
+    grid-area: six;
+  }
+
+  .top-body {
+    background: #6E8898;
+    width: 100%;
+    height: 100px;
+    display: grid;
+    grid-template-areas:
+    "nav admin";
+    ". . ."
+    ". . ."
+    grid-template-columns: 35% 35% 30%;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .userinfo {
+    grid-area: admin;
+    /* margin-bottom: 50px; */
+  }
+
+  .navigation {
+    grid-area: nav;
+    /* margin-left: 10px; */
+    grid-template-areas:
+    " shares  . "
+    " plants . "
+     "videos . ";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding-top: 40px;
+  }
+
+  .shares {
+    grid-area: shares;
+    background: #6E8898;
+    font-size: 10px;
+    /* padding-right: 25px; */
+  }
+
+  .plants {
+    grid-area: plants;
+    color: darkgrey;
+    font-size: 10px;
+    /* padding-right: 25px; */
+  }
+
+  .personal-videos {
+    grid-area: videos;
+    color: darkgrey;
+    font-size: 10px;
+    /* padding-right: 25px; */
+  }
+
+  button {
+    opacity: 100%;
+    border: none;
+    background: #6E8898;
+  }
+
+  .nav-image {
+    padding-top: 4px;
+    height: 16px;
+    width: 15px;
+  }
